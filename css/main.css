@@ -1,0 +1,94 @@
+/* background/body */
+body {
+    background: url(images/imageedit_1_7443664189.png) no-repeat center center fixed; 
+    background-size: cover;
+    margin: 0;
+    font-family: 'Georama', sans-serif;
+}
+
+/* header */
+h1 {
+     color: whitesmoke;
+     margin-left: 2vw;
+     padding-top: 2vh;
+}
+header {
+    background-color: rgb(2, 2, 43);
+    height: 10vh;
+    margin-bottom: 3vw;
+}
+
+/* main */
+main {
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+/* form left */
+.form-outer {
+    background-color: whitesmoke;
+    border: 2px rgb(2, 2, 43) solid;
+    list-style-type: none;
+    padding: 8%;
+    border-radius: 10px;
+    width: 45%;
+    margin-left: 8vw;
+}
+.form-row {
+    padding: .7em;
+}
+.form-row > label {
+    padding: .5em 1em .5em 0;
+}
+.form-row > input,
+.form-row > button {
+    padding: .5em;
+}
+  .form-row > button {
+   background: gray;
+   color: white;
+   border: 0;
+} 
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+#forms li {
+    padding: 0.5vh;
+    margin-left: 4vw;
+    text-decoration: none;
+    list-style-type: none;
+}
+#streamingplatform {
+    margin-top: 2vh;
+    padding: 9px;
+    cursor: pointer;
+}
+#save {
+    margin-top: 2vh;
+    color: whitesmoke;
+    cursor: pointer;
+}
+.button {
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color:rgb(2, 2, 43);
+    color: whitesmoke;
+    transform: scale(1.25) perspective(1px)
+}
+
+/* form right */
+#entries {
+    margin-left: 15vw;
+    margin-bottom: 5vh;
+    text-decoration: underline;
+}
+#forms {
+     margin-left: 8vw;
+     margin-bottom: 4vh;
+}
+

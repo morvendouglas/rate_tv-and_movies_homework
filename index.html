@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Georama:wght@600&display=swap" rel="stylesheet">
+    <title>Watched Films/TV Shows</title>
+</head>
+<body>
+<div id="background-wrap">
+<div id="background">
+    <header>
+    <h1>Rate TV shows & Films</h1>
+    </header>
+    <main>
+    <div class="grid-container">
+        <div class="grid-child">
+            <form id="form">
+                <ul class="form-outer">
+                    <li class="form-row">
+                        <input type="radio" id="film" name="film-tv" value="Film" class="button"><label for="film">Film</label>
+                        <input type="radio" id="tv-show" name="film-tv" value="TV Show" class="button"> <label for="tv-show">TV Show</label>
+                    </li>
+                    <li class="form-row">
+                        <label for="title">Title:</label>
+                        <input type="text" name="title" id="title">
+                    </li>
+                    <li class="form-row">
+                        <label for="streaming-platform">Streaming Platform:</label>
+                        <select name="streaming-platform" id="streamingplatform">
+                            <option value="">--Please choose an option--</option>
+                            <option value="Netflix">Netflix</option>
+                            <option value="Amazon Prime">Amazon Prime Video</option>
+                            <option value="Now TV">Now TV</option>
+                            <option value="Apple TV">Apple TV</option>
+                            <option value="Disney Plus">Disney Plus</option>
+                            <option value="BBC iPlayer">BBC iPlayer</option>
+                            <option value="All 4">All 4</option>
+                            <option value="Unknown Streaming Platform">Other</option>
+                        </select>
+                    </li>
+                    <li class="form-row"><p>Rating:</p>
+                        <input type="radio" name="ratingquality" value="1 Star &#9733;" id="1" class="button"> 
+                        <label for="1">&#9733;</label><br>
+                        <input type="radio" name="ratingquality" value="2 Stars &#9733; &#9733;" id="2" class="button"> 
+                        <label for="2">&#9733; &#9733;</label><br>
+                        <input type="radio" name="ratingquality" value="3 Stars &#9733; &#9733; &#9733;" id="3" class="button"> 
+                        <label for="3">&#9733; &#9733; &#9733;</label><br>
+                        <input type="radio" name="ratingquality" value="4 Stars &#9733; &#9733; &#9733; &#9733;" id="4" class="button"> 
+                        <label for="4">&#9733; &#9733; &#9733; &#9733;</label><br>
+                        <input type="radio" name="ratingquality" value="5 Stars &#9733; &#9733; &#9733; &#9733; &#9733;" id="5" class="button">
+                        <label for="5">&#9733; &#9733; &#9733; &#9733; &#9733;</label>
+                    </li>
+                    <li class="form-row"><button id="save" class="button">Save</button></li>
+                    <li id="delete-all-entries" class="form-row">
+                        <button id=“delete” class="button">Delete All</button>
+                    </li>
+                </ul>
+            </form>
+        </div>
+        <div class="grid-child">
+            <h2 id="entries">Entries</h2>
+                <div id="forms"></div>
+        </div>
+     </div>   
+    </main>
+</div>
+</div>
+</body>
+</html>
