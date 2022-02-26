@@ -9,13 +9,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const deleteAll = document.querySelector('#delete-all-entries');
     deleteAll.addEventListener('click', handleDelete)
 
-
 });
 
 const handleFormSubmit = function (event) {
     event.preventDefault();
     const list = document.querySelector('#forms');
-
 
     // film or tv show
     const newFilmOrTVItem = document.createElement('li');
@@ -27,19 +25,16 @@ const handleFormSubmit = function (event) {
     }
     newFilmOrTVItem.textContent = `${rate_value}`
     list.appendChild(newFilmOrTVItem)
-    
 
     // title
     const newTitleItem = document.createElement('li');
     newTitleItem.textContent = `'${event.target.title.value}'`
     list.appendChild(newTitleItem)
 
-
     // streaming platform
     const selectItem = document.createElement('li');
     selectItem.textContent = `${event.target.streamingplatform.value}`
     list.appendChild(selectItem)
-
 
     // ratings
     const newRatingsItem = document.createElement('li');
@@ -80,18 +75,3 @@ const handleDelete = function (event) {
     deleteRadioInputs.remove()
     location.reload()
   }
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
